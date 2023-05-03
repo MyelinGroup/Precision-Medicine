@@ -38,10 +38,7 @@ allevents.sort((a,b)=>{
 var transitionEnd = 'webkitTransitionEnd oTransitionEnd transitionend otransitionend';
 
 function hideEventEdit(){
-    document.documentElement.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      })
+
     $('body').removeClass('NoScroll')
    
     $("#EveEdit").removeClass("animate-from-invisable");
@@ -57,10 +54,7 @@ function showEventEdit(){
     $("#EveEdit").addClass("animate-from-invisable");
     $("#EveEdit").removeClass("displayNone");
     $("#EveEdit").removeClass("animate-to-invisable");
-    document.documentElement.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      })
+
 }
 
 $("#EveEdit #exitbtn").click(()=>{   
